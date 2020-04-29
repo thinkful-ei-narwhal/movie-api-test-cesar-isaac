@@ -46,6 +46,7 @@ app.get('/movie', (req, res) => {
       Number(app.avg_vote) >= Number(avg_vote));
   }
 
+
   res.json(results);
 });
 

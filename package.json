@@ -4,9 +4,9 @@
   "description": "",
   "main": "./scr/sever.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./scr/server.js",
-    "dev": "nodemon ./scr/server.js"
+    "dev": "nodemon ./scr/server.js",
+    "test":"mocha"
   },
   "keywords": [],
   "author": "",
