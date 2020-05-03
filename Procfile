@@ -1,1 +1,1 @@
-web: node ./scr/sever.js
+web: node scr/sever.js
