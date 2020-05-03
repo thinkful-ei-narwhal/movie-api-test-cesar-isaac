@@ -13,6 +13,7 @@ describe('app modules',()=>{
     it('should return 200 object with 88 arrays', ()=>{
       return supertest(app)
         .get('/movie')
+        .set('Authorization', 'Bearer 893hjhks-s87s9fh-8sdfhb-iy8778bhk')
         .expect(200)
         .expect('Content-Type', /json/)
         .then(res =>{
@@ -26,6 +27,7 @@ describe('app modules',()=>{
     it('should return 200 object with 1 arrays', ()=>{
       return supertest(app)
         .get('/movie')
+        .set('Authorization', 'Bearer 893hjhks-s87s9fh-8sdfhb-iy8778bhk')
         .expect(200)
         .query({ genre: 'Drama', country:'Italy', avg_vote:8})
         .expect('Content-Type', /json/)
